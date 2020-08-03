@@ -1,0 +1,13 @@
+server/main
+client/node_modules
+client/build
+djangolang_pg_data
+server/.env
+client/.env
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*/.env
+*/yarn-error.log
