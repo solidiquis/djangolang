@@ -13,10 +13,7 @@ I tried setting this up on Windows 10 Home using the [Docker Toolbox](https://do
 ### Install Docker
 Download [Docker & Docker-compose](https://www.docker.com/products/docker-desktop). Verify that they're properly installed by running `docker -v` and `docker-compose -v`.
 ### Development environment
-First, rename the `.env-example` in the server directory into `.env`. Then while in your project's root directory, pop this command into your terminal: `docker volume create --name=djangolang_pg_data`. Next, `cd client` and run `yarn` or `npm install`. Follow up by returning to your project root directory and boot up all of your containers by running `docker-compose up`, then visit localhost:3000 to see your app running. Now you're ready to develop :]
-
-*Optional Read*:
-`docker volume create --name=djangolang_pg_data` creates the volume that will allow you to mount your local **pg_data** directory in your project's root directory to **/var/lib/postgresql/data** in the container—which is where your postgres data lives—allowing data to persist between the two. 
+First, rename the `.env-example` in the server directory into `.env`. Then while in your project's root directory, pop this command into your terminal: `docker volume create --name=djangolang_pg_data`. Next, `cd client` and run `yarn` or `npm install`. Follow up by returning to your project root directory and booting up all of your containers by running `docker-compose up`. Finally, visit localhost:3000 to see your app running. Now you're ready to develop :]
 
 # Note from Author
 The name DjanGolang takes inspiration from the Python web-framework, Django, but nothing beyond that. Issues and pull requests are welcome!
